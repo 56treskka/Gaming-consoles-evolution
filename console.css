@@ -1,0 +1,23 @@
+.container {
+    position: relative;
+    height: 100vh;
+    flex-direction: column;
+    font-size: 30px;
+    font-family: Pixelify Sans, sans-serif;
+}
+
+.container-left {
+    position: relative;
+    top: 250px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.container-right {
+    position: relative;
+    top: 125px;
+    display: flex;
+    justify-content: flex-end;
+}
