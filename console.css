@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+.container-right {
+    position: relative;
+    right: 20px;
+    width: 600px;
+    height: 350px;
+    margin-top: 60px;
+    padding: 50px 80px;
+    background-image: url("images/block.png");
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: Pixelify Sans, sans-serif;
+    align-items: center;
+    color: #d3d3d3;
+
+}
+
+.container-left {
+    position: relative;
+    left: 20px;
+    width: 600px;
+    height: 350px;
+    margin-top: 160px;
+    padding: 50px 80px;
+    background-image: url("images/block-reverse.png");
+    display: flex;
+    flex-direction: row;
+    font-family: Pixelify Sans, sans-serif;
+    align-items: center;
+    color: #d3d3d3;
+
+}
+.containers-right {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    bottom: 600px;
+    height: 800px;
+    right: 20px;
+}
+
+.containers-left {
+    position: relative;
+    display: flex;
+    top: 200px;
+    left: 10px;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 800px;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+}
+
+.photo {
+    height: 100px;
+    width: 150px;
+}
