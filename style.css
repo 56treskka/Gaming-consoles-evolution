@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 220vh;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    background-color: black;
+    color: #AEAEAE;
+    font-family: Pixelify Sans, sans-serif;
+}
+
+.header>h2{
+    font-size: 4em;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover, .navigation a{
+    background: #d9d9d9;
+    color: black;
+}
+
+.menu_small_icon {
+    display: none;
+}
+
+.menu-small {
+    display: none;
+    height: 2em;
+}
+
+.menu_small_item {
+    display: none;
+}
+
+.stick {
+    width: 80%;
+    height: 5px;
+    background: #d9d9d9;
+}
+
+.Game{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-size: 30px;
+    font-family: Pixelify Sans, sans-serif;
+    
+}
+
+footer{
+    color: #AEAEAE;
+    font-family: Pixelify Sans, sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color:  black;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    align-items: center;
+    position: fixed;
+}
+
+@media (max-width: 1293px) {
+    body{
+        min-height: 20vh;
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 60px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1;
+        background-color: black ;
+        color: #d9d9d9;
+        font-family: Pixelify Sans, sans-serif;
+    }
+    
+    .header>h2{
+        font-size: 2em;
+    }
+    
+    .navigation a {
+        display: none;
+        
+    }
+    .navigation a:hover, .navigation a{
+        display: none;
+    }
+
+    .menu-small {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color: black;
+        transform: translateX(-100%);
+    }
+
+    .menu_small_item {
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+    .menu_small_item:first-child {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu_small_item a {
+        text-decoration: none;
+        color: black;
+        padding: 6px 15px;
+        border-radius: 20px;
+        font-weight: 600;
+    }
+    .menu_small_item a:hover, .menu_small_item a{
+        background: #AEAEAE;
+        color: black;
+    }
+    .menu_small_icon {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        z-index: 1;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    img {
+        height: 250px;
+        width: 350px;
+    }
+    .Game {
+        display: flex;
+        position: absolute;
+        top: 120px;
+        align-items: center;
+        justify-content: center;
+        left: 50px
+    }
+    footer{
+        color: white;
+        font-family: Pixelify Sans, sans-serif;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color:  #182580;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 35px;
+        align-items: center;
+        position: fixed;
+    }
+}

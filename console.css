@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 20vh;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    background-color: #182580;
+    color: white;
+    font-family: Pixelify Sans, sans-serif;
+}
+
+.header>h2{
+    font-size: 4em;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover, .navigation a{
+    background: white;
+    color: #182580;
+}
+
+.menu_small_icon {
+    display: none;
+}
+
+.menu-small {
+    display: none;
+    height: 2em;
+}
+
+.menu_small_item {
+    display: none;
+}
+
+.stick {
+    width: 80%;
+    height: 5px;
+    background: white;
+}
+
+footer{
+    color: white;
+    font-family: Pixelify Sans, sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color:  #182580;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    align-items: center;
+    position: fixed;
+}
+
+.container-right {
+    position: relative;
+    right: 0;
+    width: 600px;
+    height: 350px;
+    margin-top: 60px;
+    padding: 50px 80px;
+    padding-right: 5px;
+    background-color: #182580;
+    display: flex;
+    flex-direction: column;
+    font-family: Pixelify Sans, sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-radius: 15px;
+
+}
+
+.container-left {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    margin-top: 120px;
+    padding: 50px 80px;
+    padding-left: 5px;
+    background-color: #182580;
+    display: flex;
+    flex-direction: column;
+    font-family: Pixelify Sans, sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-radius: 15px;
+
+}
+.containers-right {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    bottom: 600px;
+    height: 800px;
+    right: 20px;
+}
+
+.containers-left {
+    position: relative;
+    display: flex;
+    top: 200px;
+    left: 10px;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 800px;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+}
+
+.photo {
+    height: 100px;
+    width: 150px;
+}
+
+.xphoto {
+    width: 250px;
+    height:100px;
+}
+
+.bar_wrapper {
+    margin: 2rem;
+    height: 200rem;
+    z-index: 3;
+  }
+  
+  .progress_wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color: #0000ff;
+    z-index: 3;
+  }
+
+.progress_bar {
+  position: absolute;
+  top: 250px;
+  left: 0;
+  width: 0;
+  height: 15px;
+  background-color: #0000ff;
+  z-index: 3;
+}
+
+.psphoto {
+    height: 150px;
+    width: 50px;
+}
+@media (max-width: 1483px) {
+    .navigation a {
+        display: none;
+        
+    }
+    .navigation a:hover, .navigation a{
+        display: none;
+    }
+
+    .menu-small {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color: #182580;
+        transform: translateX(-100%);
+    }
+
+    .menu_small_item {
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+    .menu_small_item:first-child {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu_small_item a {
+        text-decoration: none;
+        color: white;
+        padding: 6px 15px;
+        border-radius: 20px;
+        font-weight: 600;
+    }
+    .menu_small_item a:hover, .menu_small_item a{
+        background: white;
+        color: #182580;
+    }
+    .menu_small_icon {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        z-index: 1;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1293px) {
+
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 60px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1;
+        background-color: #182580;
+        color: white;
+        font-family: Pixelify Sans, sans-serif;
+    }
+    
+    .header>h2{
+        font-size: 2em;
+    }
+
+    .containers-left {
+        position: relative;
+        display: flex;
+        padding: 50px;
+        width: 90px;
+        top: 330px;
+        left: 0;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .containers-right {
+        display: flex;
+        padding: 30px;
+        width: 100%;
+        top: 370px;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
+        margin: 100px;
+    }   
+
+    .container-left {
+        position: relative;
+        width: 200px;
+        height: 650px;
+        margin-top: 120px;
+        padding: 50px 40px;
+        padding-right: 0;
+        padding-left: 3px;
+        background-color: #182580;
+        display: flex;
+        flex-direction: column;
+        font-family: Pixelify Sans, sans-serif;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border-radius: 15px;
+        font-size: 16px;
+    }
+
+    .container-right {
+        position: relative;
+        right: 10px;
+        width: 200px;
+        height: 650px;
+        margin-top: 60px 10px;
+        padding: 50px 80px;
+        background-color: #182580;
+        display: flex;
+        flex-direction: column;
+        font-family: Pixelify Sans, sans-serif;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        border-radius: 15px;
+        font-size: 16px;
+    }
+
+    .progress_bar {
+        position: fixed;
+        top: 270px;
+        left: 0;
+        width: 0;
+        height: 15px;
+        background-color: #0000ff;
+        z-index: 3;
+
+    }
+
+    footer{
+        color: white;
+        font-family: Pixelify Sans, sans-serif;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color:  #182580;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 35px;
+        align-items: center;
+        position: fixed;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .containers-left {
+        display: flex;
+        position: relative;
+        padding: 10px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .containers-right {
+        display: flex;
+        padding: 10px;
+        padding-right: 0;
+        padding-left: 10px;
+        right: 0;
+        width: 250px;
+        top: 330px;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
+    }   
+
+    .container-left {
+        position: relative;
+        width: 160px;
+        height: 660px;
+        margin-top: 120px;
+        padding: 50px 64px;
+        padding-right: 0;
+        padding-left: 5px;
+        background-color: #182580;
+        display: flex;
+        flex-direction: column;
+        font-family: Pixelify Sans, sans-serif;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border-radius: 15px;
+        font-size: 14px;
+    }
+
+    .container-right {
+        position: relative;
+        right: 10px;
+        width: 160px;
+        height: 660px;
+        margin-top: 60px 10px;
+        padding: 50px 80px;
+        background-color: #182580;
+        display: flex;
+        flex-direction: column;
+        font-family: Pixelify Sans, sans-serif;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        border-radius: 15px;
+        font-size: 12px;
+    }
+
+    .progress_bar {
+        position: fixed;
+        top: 270px;
+        left: 0;
+        width: 0;
+        height: 15px;
+        background-color: #0000ff;
+        z-index: 3;
+
+    }
+}
